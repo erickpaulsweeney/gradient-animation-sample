@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+h1.heading {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0 1rem;
+  font-weight: 500;
+}
+
+h5.subheading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: gray;
+}
+
+h5.subheading:last-of-type {
+  padding-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: -1000%;
+  cursor: pointer;
+  transition: animation 1000ms ease, box-shadow 500ms ease;
+}
+
+.card1 {
+  background-image: url(./gradient_background_1.png);
+}
+
+.card2 {
+  background-image: url(./gradient_background_2.png);
+}
+
+@keyframes left {
+  0% {
+    background-position: -1000%;
+  }
+
+  100% {
+    background-position: 1000%;
+  }
+}
+
+@keyframes right {
+  0% {
+    background-position: 1000%;
+  }
+
+  100% {
+    background-position: -1000%;
+  }
+}
